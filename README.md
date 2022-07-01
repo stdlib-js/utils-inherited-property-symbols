@@ -24,14 +24,30 @@ limitations under the License.
 
 > Return an array of an object's inherited [symbol][@stdlib/symbol/ctor] properties.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-inherited-property-symbols
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import inheritedPropertySymbols from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-property-symbols@deno/mod.js';
+var inheritedPropertySymbols = require( '@stdlib/utils-inherited-property-symbols' );
 ```
 
 #### inheritedPropertySymbols( obj\[, level] )
@@ -65,9 +81,9 @@ var symbols = inheritedPropertySymbols( [ 1, 2, 3 ], 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import hasSymbolSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-symbol-support@deno/mod.js';
-import Symbol from 'https://cdn.jsdelivr.net/gh/stdlib-js/symbol-ctor@deno/mod.js';
-import inheritedPropertySymbols from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-inherited-property-symbols@deno/mod.js';
+var hasSymbolSupport = require( '@stdlib/assert-has-symbol-support' );
+var Symbol = require( '@stdlib/symbol-ctor' );
+var inheritedPropertySymbols = require( '@stdlib/utils-inherited-property-symbols' );
 
 var hasSymbols;
 var symbols;
@@ -123,7 +139,7 @@ console.log( symbols );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -179,22 +195,23 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/utils-inherited-property-symbols/tree/deno
 [umd-url]: https://github.com/stdlib-js/utils-inherited-property-symbols/tree/umd
 [esm-url]: https://github.com/stdlib-js/utils-inherited-property-symbols/tree/esm
+[branches-url]: https://github.com/stdlib-js/utils-inherited-property-symbols/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-inherited-property-symbols/main/LICENSE
 
-[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor/tree/deno
+[@stdlib/symbol/ctor]: https://github.com/stdlib-js/symbol-ctor
 
 <!-- <related-links> -->
 
-[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils-inherited-keys/tree/deno
+[@stdlib/utils/inherited-keys]: https://github.com/stdlib-js/utils-inherited-keys
 
-[@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils-inherited-property-descriptors/tree/deno
+[@stdlib/utils/inherited-property-descriptors]: https://github.com/stdlib-js/utils-inherited-property-descriptors
 
-[@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils-inherited-property-names/tree/deno
+[@stdlib/utils/inherited-property-names]: https://github.com/stdlib-js/utils-inherited-property-names
 
-[@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils-property-symbols/tree/deno
+[@stdlib/utils/property-symbols]: https://github.com/stdlib-js/utils-property-symbols
 
-[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils-property-symbols-in/tree/deno
+[@stdlib/utils/property-symbols-in]: https://github.com/stdlib-js/utils-property-symbols-in
 
 <!-- </related-links> -->
 
